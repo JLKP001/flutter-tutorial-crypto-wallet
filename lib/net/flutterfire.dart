@@ -22,6 +22,7 @@ Future<bool> register(String email, String password) async {
     } else if (e.code == 'email-already-in-use') {
       print('The count already existsfor that email.');
     }
+    print(e.toString());
     return false;
   } catch (e) {
     print(e.toString());
